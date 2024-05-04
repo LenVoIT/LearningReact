@@ -1,0 +1,45 @@
+.game-board{
+    margin: 25px;
+    width: 500px;
+    height: 500px;
+    grid-gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+.game-cell{
+    box-shadow: rgba(149,157,165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 100px;
+}
+.replayBtn{
+    color: orange;
+    padding: 10px 40px;
+    border-radius: 20px;
+    margin-left: 15%;
+    cursor: pointer;
+    border: 0px;
+    outline: none;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #565656;
+}
+.is-X{
+    color: #2cccff;
+}
+.is-O{
+    color: orange;
+}
+.Winner{
+    transition: all 3ms ease-in-out;
+    font-size: 30px;
+}
+.Winner::after, ::before{
+    transition: all 3ms ease-in-out;
+}

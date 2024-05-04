@@ -1,0 +1,62 @@
+/* css-reset */
+html{
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+*,*:after,*:before{
+  box-sizing: border-box;
+}
+input{
+  line-height: normal;
+}
+input,textarea,select,button{
+  outline: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  display: block;
+  max-width: 100%;
+}
+/* css-reset */
+.ytb-list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+  padding: 25px;
+}
+.ytb-img{
+  height: 250px;
+  margin-bottom: 15px;
+}
+.ytb-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.ytb-footer{
+  display: flex;
+  align-items: flex-start;
+  gap: 0 20px;
+}
+.ytb-avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.ytb-title{
+  font-size: 18px;
+  margin-bottom: .2rem;
+}
+.ytb-author{
+  font-size: 14px;
+  color: #999;
+  font-weight: 300;
+}
